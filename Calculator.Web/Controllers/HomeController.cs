@@ -18,9 +18,14 @@ namespace Calculator.Web.Controllers
             return View();
         }
 
+        public IActionResult Create(Product product)
+        {
+            return View(product);
+        }
+
         public IActionResult Privacy()
         {
-            return View();
+            return View("Jakiś text");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
